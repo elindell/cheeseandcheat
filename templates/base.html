@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link href="/static/stylesheets/base.css" rel="stylesheet" type="text/css" />
+        <title>{% block title %}{% endblock %}</title>
+    </head>
+    <body>
+        <div id="mainColumn">
+            <div id="header">
+                <div id="bannerContainer">
+                    <div id="banner1" class="banner"></div>
+                    <div id="banner2" class="banner"></div>
+                </div>
+                <div id="menuContainer">
+                    <ul id="menuList">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about/">About us</a></li>
+                        <li><a href="/photos/">Photos</a></li>
+                        <li><a href="/directions/">Directions</a></li>
+                        <li><a href="/registry/">Registry</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="contentContainer">
+                <div id="content">
+                {% block content %}{% endblock %}
+                </div>
+            </div>
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="/static/scripts/base.js"></script>
+    </body>
+</html>
