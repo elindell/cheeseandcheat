@@ -7,7 +7,7 @@
                     , baseImageUrl + "IMAG0054.jpg"
                     , baseImageUrl + "IMAG0066.jpg"
                     , baseImageUrl + "IMAG0084.jpg"
-                    , baseImageUrl + "IMAG0022small.jpg"]
+                    , baseImageUrl + "IMAG0022.jpg"]
      , visiblePeriod = 6000
      , fadePeriod = 2000
      , banner = $("#banner1")
@@ -21,9 +21,6 @@
       , indexIsEven = (i % 2) === 0
       , bannerToFadeOut = indexIsEven ? banner : banner2
       , bannerToFadeIn = indexIsEven ? banner2 : banner;
-      
-      console.log("Banner to fade out: ", bannerToFadeOut);
-      console.log("Banner to fade in: ", bannerToFadeIn);
       
       bannerToFadeIn.css({backgroundImage: urlAttribute});
       bannerToFadeIn.fadeIn(fadePeriod);
