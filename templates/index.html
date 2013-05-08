@@ -1,1 +1,138 @@
 {% extends "base.html" %}
+{% block title %}yo{% endblock %}
+{% block css %}
+<link href="/static/stylesheets/index.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+{% block content %}
+<div id="theaterBackground">
+	<div id="homeElements"></div>
+	<!--<div id="bird"></div>
+	<div id="branch"></div>
+	<div id="bigEK"></div>-->
+	<div id="upperCloud"></div>
+	<div id="lowerCloud"></div>
+	<div id="smallEK"></div>
+	<a href="#" id="letUsTellYouOurStory"></a>
+	<!-- <a href="#"><div id="letUsTellYouOurStory"></div></a> -->
+	<div id="tree"></div>
+	
+	<div id="theaterAndCaptionContainer">
+		<a href="#"><div id="previousButtonContainer"><div id="previousButton"></div></div></a>
+		<div id="theater">
+		    <div id="layer1" class="layer">
+				<div class="panel">
+					<img src="/static/images/b1.png" width="600" height="525" />
+				</div>
+				<div class="panel">
+					<img src="/static/images/b2.png" width="600" height="525" />
+				</div>
+				<div class="panel">
+					<img src="/static/images/b3.png" width="600" height="525" />
+				</div>
+				<div class="panel">
+					<img src="/static/images/b4.png" width="600" height="525" />
+				</div>
+				<div class="panel">
+					<img src="/static/images/b5.png" width="600" height="525" />
+				</div>
+				<div class="panel">
+					<img src="/static/images/b6.png" width="600" height="525" />
+				</div>
+				<div class="panel">
+					<img src="/static/images/b7.png" width="600" height="525" />
+				</div>
+				<div class="panel">
+					<img src="/static/images/b8.png" width="600" height="525" />
+				</div>
+				<div class="panel">
+					<img src="/static/images/b9.png" width="600" height="525" />
+				</div>
+				<div class="panel">
+					<img src="/static/images/b10.png" width="600" height="525" />
+				</div>
+				<div class="panel">
+					<img src="/static/images/b11.png" width="600" height="525" />
+				</div>
+		    </div>
+		    <div id="layer2" class="layer">
+				<div class="panel">
+					<img src="/static/images/m1.png" width="800" height="525" />
+				</div>
+				<div class="panel">
+					<img src="/static/images/m2.png" width="800" height="525" />
+				</div>
+				<div class="panel">
+					<img src="/static/images/m3.png" width="800" height="525" />
+				</div>
+				<div class="panel">
+					<img src="/static/images/m4.png" width="800" height="525" />
+				</div>
+				<div class="panel">
+					<img src="/static/images/m5.png" width="800" height="525" />
+				</div>
+				<div class="panel">
+					<img src="/static/images/m6.png" width="800" height="525" />
+				</div>
+				<div class="panel">
+					<img src="/static/images/m7.png" width="800" height="525" />
+				</div>
+				<div class="panel">
+					<img src="/static/images/m8.png" width="800" height="525" />
+				</div>
+				<div class="panel">
+					<img src="/static/images/m9.png" width="800" height="525" />
+				</div>
+				<div class="panel">
+					<img src="/static/images/m10.png" width="800" height="525" />
+				</div>
+				<div class="panel">
+					<img src="/static/images/m11.png" width="800" height="525" />
+				</div>
+		    </div>
+		    <div id="layer3" class="layer">
+				<div class="panel">
+					&nbsp;
+				</div>
+				<div class="panel">
+					&nbsp;
+				</div>
+				<div class="panel">
+					&nbsp;
+				</div>
+				<div class="panel">
+					<img src="/static/images/f4.png" width="520" height="525" style="position: relative; left: 478px;"/>
+				</div>
+				<div class="panel">
+					&nbsp;
+				</div>
+				<div class="panel">
+					&nbsp;
+				</div>
+				<div class="panel">
+					&nbsp;
+				</div>
+				<div class="panel">
+					<img src="/static/images/f8.png" width="520" height="525" style="position: relative; left: 478px;"/>
+				</div>
+				<div class="panel">
+					&nbsp;
+				</div>
+				<div class="panel">
+					&nbsp;
+				</div>
+				<div class="panel">
+					&nbsp;
+				</div>
+		    </div>
+		</div>
+		<div id="captionContainer">
+		    <p></p>
+		</div>
+		<a href="#"><div id="nextButtonContainer"><div id="nextButton"></div></div></a>
+	</div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="/static/scripts/index.js"></script>
+{% endblock %}

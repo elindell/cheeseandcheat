@@ -1,61 +1,40 @@
 body {
-  background-color: lightgray;
+	background: -webkit-linear-gradient(#76C5CC, #39A0AC);
+	background: -moz-linear-gradient(#76C5CC, #39A0AC);
+	background: -o-linear-gradient(#76C5CC, #39A0AC);
+	background: -ms-linear-gradient(#76C5CC, #39A0AC);
+	background: linear-gradient(#76C5CC, #39A0AC);
+	background-image: url("/static/images/bgGradient.png");
+	background-color: #39A0AC;
+	background-repeat: repeat-x;
+	height: 100%;
+}
+
+#nav
+{
+	float: right;
+}
+
+#nav li
+{
+	display: inline;
+	list-style-type: none;
 }
 
 #mainColumn {
-  position: absolute;
-  width: 800px;
+  position: relative;
+  min-height: 100%;
+  width: 1080px;
   top: 0;
   bottom: 0;
   left: 50%;
-  margin-left: -400px;
-  background-color: rgb(171,255,246);
+  margin-left: -540px;
 }
 
-#theaterContainer {
-  position: absolute;
-  width: 800px;
-  height: 600px;
-  top: 100px;
-  left: 0;
-}
-
-#theater {
-  position: absolute;
-  overflow: hidden;
-  height: 525px;
-  width: 800px;
-}
-
-.layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height:525px;
-  overflow-x: auto;
-  overflow-y: hidden;
-}
-
-#layer1 {
-  background-image: url("/static/images/backGround.png");
-}
-
-#layer2 {
-  background-image: url("/static/images/middleGround.png");
-}
-
-#layer3 {
-  background-image: url("/static/images/foreGround.png");
-}
-
-#captionContainer {
-  position: absolute;
-  bottom: 0;
-  left: 250px;
-  width: 300px;
-  height: 50px;
-  margin-top:20px;
-  text-align: center;
+body, html
+{
+	position: relative;
+	height: 100%;
 }
 
 * {

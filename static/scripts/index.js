@@ -5,27 +5,22 @@
         , numberOfPanels = 11
         , staticLayerPanelWidth = 800
         , panelSwitchDuration = 3000
+		, initialTransitionDuration = 2500
 		, captions
 		, captionP = $("#captionContainer p")
+		, previousButton = $("#previousButton")
+		, nextButton = $("#nextButton")
 		, animating
         , layers
         , index
         , j;
 		
-		$.easing = {
-			linear: function( p ) {
-				return p;
-			},
-			swing: function( p ) {
-				//return 0.5 - Math.cos( p*Math.PI ) / 2;
-				var easeIn = function(p) {
-					return p * p * (3*p - 2);
-				};
-				return p < 0.5 ?
-							easeIn( p * 2 ) / 2 :
-							1 - easeIn( p * -2 + 2 ) / 2;
+		$.extend($.easing, {
+			easeOutBack: function(a,b,c,d,e,f) { 
+				f = 1;
+				return d*((b=b/e-1)*b*((f+1)*b+f)+1)+c;
 			}
-		};
+		});
 		
 		layers = [
             {element: $("#layer1"), ratio: .75}
@@ -49,16 +44,35 @@
         for (index = 0; index < layers.length; index++) {
             layers[index].element.css({width: numberOfPanels * layers[index].ratio * staticLayerPanelWidth});
         }
+		
+		function beginStory(e) {
+			e.preventDefault();
+			
+			$('#letUsTellYouOurStory').unbind('click');
+			$('#letUsTellYouOurStory').remove();
+				
+			$("#homeElements").animate({left: -1200}, initialTransitionDuration, 'swing', function() {
+				//NO TURNIN' BACK NOW
+				$('#homeElements').remove();
+			});
+			
+			$("#tree").animate({right: 930}, initialTransitionDuration);
+			
+			$("#theaterAndCaptionContainer").animate({left: 140}, initialTransitionDuration, 'swing', function() {
+				$("#smallEK").fadeIn();
+				nextButton.fadeIn();
+			});
+		}
         
         function goToNextPanel(e) {
 			e.preventDefault();
 			if (animating) {
 				return;
 			}
-			animating = true; 
-            if (currentPanelIndex < numberOfPanels - 1) {
+			
+            if (currentPanelIndex < numberOfPanels - 1) { 
                 currentPanelIndex = currentPanelIndex + 1;
-                scrollToPanel(currentPanelIndex);
+                scrollToPanel(currentPanelIndex, panelSwitchDuration);
             }
         }
         
@@ -67,36 +81,46 @@
 			if (animating) {
 				return;
 			}
-			animating = true;
+			
             if (currentPanelIndex > 0) {
                 currentPanelIndex = currentPanelIndex - 1;
-                scrollToPanel(currentPanelIndex);
+                scrollToPanel(currentPanelIndex, panelSwitchDuration);
             }
         }
  
-        function scrollToPanel(panelIndex) {
-            var index
-            , offsets = [];
+        function scrollToPanel(panelIndex, animationDuration) {
+            var index;
             
             if (panelIndex < 0 || panelIndex > numberOfPanels) {
                 return;
             }
-            
-            //Shouldn't take much time to calculate the offset, but I calculate the offsets
-            //in batch so I can run the animations as close together as possible.
-            for (index = 0; index < layers.length; index++) {
-                offsets.push(getOffset(layers[index].ratio, panelIndex));
-            }
-            
+			
+			animating = true;
+			
+			//Fade the last caption out and the next one in
 			captionP.fadeOut(panelSwitchDuration/2, function() {
 				captionP.text(captions[panelIndex]);
-				captionP.fadeIn(panelSwitchDuration/2);
+				captionP.fadeIn(animationDuration/2);
 			});
 			
+			//Switch the layers
             for (index = 0; index < layers.length; index++) {
-                layers[index].element.animate({left: offsets[index]}, panelSwitchDuration, 'swing', function () {
+                layers[index].element.animate({left: getOffset(layers[index].ratio, panelIndex)}, animationDuration, 'easeOutBack', function () {
                 	animating = false;
                 });
+			}
+			
+			if (panelIndex === 0) {
+				previousButton.fadeOut(animationDuration/2, function() {
+					nextButton.fadeIn(animationDuration/2);
+				});
+			} else if (panelIndex === numberOfPanels - 1) {
+				nextButton.fadeOut(animationDuration/2, function() {
+					previousButton.fadeIn(animationDuration/2);
+				});
+			} else {
+				previousButton.fadeIn(animationDuration/2);
+				nextButton.fadeIn(animationDuration/2);
 			}
         }
         
@@ -106,9 +130,8 @@
             return (staticLayerPanelWidth/2) * (1-ratio) - panelIndex * staticLayerPanelWidth * ratio;
         }
         
-        scrollToPanel(0);
-        
-        $('#nextButton').click(goToNextPanel);
-        $('#previousButton').click(goToPreviousPanel);
+        nextButton.click(goToNextPanel);
+        previousButton.click(goToPreviousPanel);
+		$('#letUsTellYouOurStory').click(beginStory);
     });
 })($);
