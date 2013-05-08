@@ -4,7 +4,7 @@
         var currentPanelIndex = 0
         , numberOfPanels = 11
         , staticLayerPanelWidth = 800
-        , panelSwitchDuration = 3000
+        , panelSwitchDuration = 2500
 		, initialTransitionDuration = 2500
 		, captions
 		, captionP = $("#captionContainer p")
@@ -126,7 +126,7 @@
         
         function getOffset(ratio, panelIndex) {
             //Account for the initial offset in aligning the panels, then just account for what
-            //panel in that layer we're on
+            //panel we're on in that layer
             return (staticLayerPanelWidth/2) * (1-ratio) - panelIndex * staticLayerPanelWidth * ratio;
         }
         
