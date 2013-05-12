@@ -1,3 +1,10 @@
+/*
+	"&" yellow: #F2F5B5
+	"let us tell you our story" blue: #39869C
+	"bird" brown: #9C5534
+	"evergreen" green: #CCE438
+*/
+
 body {
 	background: -webkit-linear-gradient(#76C5CC, #39A0AC);
 	background: -moz-linear-gradient(#76C5CC, #39A0AC);
@@ -10,15 +17,36 @@ body {
 	height: 100%;
 }
 
-#nav
-{
-	float: right;
+#nav {
+	position: absolute;
+	right: 0;
+	z-index: 1000;
 }
 
-#nav li
-{
+#nav li {
 	display: inline;
 	list-style-type: none;
+}
+
+.navItem {
+	font-family: 'Bad Script', cursive;
+	text-decoration: none;
+	color: #39869C;
+	font-size: 1em;
+	margin: auto 10px;
+}
+
+.navItem:link {
+	color: #39869C;
+}
+
+.navItem:visited {
+	color: #39869C;
+}
+
+.navItem:hover {
+	color: #39869C;
+	text-shadow: 0 0 2em white;
 }
 
 #mainColumn {
