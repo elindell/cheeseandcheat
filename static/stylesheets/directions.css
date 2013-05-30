@@ -1,0 +1,36 @@
+#backgroundContainer {
+	background-color: white;
+	min-height: 70%;
+	width: 80%;
+	position: absolute;
+	left: 50%;
+	margin-left: -40%;
+	margin-top: 42px;
+	box-shadow: 0 0 10px 1px #328290;
+}
+
+#ribbon {
+	position: absolute;
+	right: -4px;
+	top: -4px;
+}
+
+.directions {
+	margin:  10px auto 10px 10px;
+}
+
+.directionsList {
+	list-style-type: none;
+}
+
+#flowersBack {
+	position: absolute;
+	right: -63px;
+	bottom: -39px;
+}
+
+#flowerFront {
+	position: absolute;
+	right: -50px;
+	bottom: -29px;
+}
