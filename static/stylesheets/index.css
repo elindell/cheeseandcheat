@@ -142,8 +142,7 @@ Preface: 800x525: clouds, bird, branch, e&k, let us tell you our story
 	top: 0;
 	left: 0;
 	height:525px;
-	overflow-x: auto;
-	overflow-y: hidden;
+	overflow: visible;
 }
 
 .panel {
@@ -157,6 +156,12 @@ Preface: 800x525: clouds, bird, branch, e&k, let us tell you our story
 #layer1 .panel {
 	width: 600px;
 	height: 525px;
+}
+
+#sliver
+{
+	position: absolute;
+	left: -100px;
 }
 
 #layer2 {
