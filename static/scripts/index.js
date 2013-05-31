@@ -39,6 +39,7 @@
 			, "Caption eight"
 			, "Caption nine"
 			, "Caption ten"
+			, "Caption eleven"
 		];
 		
 		captionP.text(captions[0]);

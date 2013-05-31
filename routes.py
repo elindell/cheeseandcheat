@@ -1,15 +1,11 @@
 from webapp2_extras.routes import RedirectRoute
 import handlers.index
-import handlers.about_us
-import handlers.directions
+import handlers.information
 import handlers.photos
-import handlers.registry
 
 _routes = [('/', handlers.index.IndexHandler),
-           ('/about/', handlers.about_us.AboutUsHandler),
-           ('/directions/', handlers.directions.DirectionsHandler),
-           ('/photos/', handlers.photos.PhotosHandler),
-           ('/registry/', handlers.registry.RegistryHandler)
+           ('/information/', handlers.information.InformationHandler),
+           ('/photos/', handlers.photos.PhotosHandler)
            ]
 
 def get_routes():
