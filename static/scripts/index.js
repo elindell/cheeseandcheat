@@ -41,6 +41,8 @@
 			, "Caption ten"
 		];
 		
+		captionP.text(captions[0]);
+		
         for (index = 0; index < layers.length; index++) {
             layers[index].element.css({width: numberOfPanels * layers[index].ratio * staticLayerPanelWidth});
         }

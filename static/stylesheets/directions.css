@@ -1,12 +1,18 @@
 #backgroundContainer {
 	background-color: white;
-	min-height: 70%;
-	width: 80%;
+	min-height: 500px;
+	width: 864px;
 	position: absolute;
 	left: 50%;
 	margin-left: -40%;
-	margin-top: 42px;
+	margin-top: 83px;
 	box-shadow: 0 0 10px 1px #328290;
+}
+
+#contentContainer {
+	margin: auto auto 20px 30px;
+	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+	color: #549EAA;
 }
 
 #ribbon {
@@ -15,12 +21,47 @@
 	top: -4px;
 }
 
+.heading {
+	font-family: Georgia, Times, "Times New Roman", serif;
+	color: #70A833;
+	position: relative;
+	font-size: 3em;
+}
+
+.heading:before, .heading:after {
+    content: "Directions";
+    color: rgba(255,255,255,.2);
+    position: absolute;
+}
+
+.heading:before { top: 1px; left: 1px }
+.heading:after  { top: 2px; left: 2px }
+
+#directionsHeader {
+	margin: 15px auto 10px auto;
+}
+
+#address {
+	margin-top: 10px;
+}
+
 .directions {
-	margin:  10px auto 10px 10px;
+	margin-top: 15px;
 }
 
 .directionsList {
 	list-style-type: none;
+	margin-top: 5px;
+	color: #549EAA;
+}
+
+#directionsFromMichigan {
+	float: left;
+}
+
+#directionsFromWisconsin {
+	float: right;
+	margin-right: 10px;
 }
 
 #flowersBack {
@@ -31,6 +72,6 @@
 
 #flowerFront {
 	position: absolute;
-	right: -50px;
-	bottom: -29px;
+	right: -95px;
+	bottom: -60px;
 }

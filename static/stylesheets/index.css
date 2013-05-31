@@ -1,24 +1,9 @@
-/*
-theater background: lines, tree, small e&k (invisible)
-	- Tree moved by JS
-Preface: 800x525: clouds, bird, branch, e&k, let us tell you our story
-	- Everything moved out of the way by JS
-	- Fade in small E & K in top right of theater background
-*/
 #theaterBackground {
 	position: relative;
 	width: 1080px;
 	height: 768px;
 	left: 0;
 	top: 0;
-	/* small loop,
-	big loop,
-	bottom left to upper right slope */
-	background-image: url("/static/images/bg1.png"), 
-	url("/static/images/bg2.png"), 
-	url("/static/images/bg3.png"); 
-	background-position: top right, center center, top left;
-	background-repeat: no-repeat;
 	overflow: hidden;
 }
 
