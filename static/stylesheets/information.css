@@ -26,10 +26,10 @@
 	color: #70A833;
 	position: relative;
 	font-size: 3em;
+	margin: 15px auto 10px auto;
 }
 
 .heading:before, .heading:after {
-    content: "Directions";
     color: rgba(255,255,255,.2);
     position: absolute;
 }
@@ -37,31 +37,30 @@
 .heading:before { top: 1px; left: 1px }
 .heading:after  { top: 2px; left: 2px }
 
-#directionsHeader {
-	margin: 15px auto 10px auto;
+#ceremonyHeader:before, #ceremonyHeader:after {
+	content: "Ceremony and Reception";
+}
+
+#addressContainer {
+	margin-bottom: 20px;
 }
 
 #address {
-	margin-top: 10px;
+	margin: 10px auto;
 }
 
-.directions {
-	margin-top: 15px;
+#schedule {
+	line-height: 1.25em;
 }
 
-.directionsList {
+#registryHeader:before, #registryHeader:after {
+	content: "Registry";
+}
+
+#registryList {
 	list-style-type: none;
-	margin-top: 5px;
-	color: #549EAA;
-}
-
-#directionsFromMichigan {
-	float: left;
-}
-
-#directionsFromWisconsin {
-	float: right;
-	margin-right: 10px;
+	margin: 10px auto 10px 27px;
+	line-height: 1.25em;
 }
 
 #flowersBack {
@@ -75,3 +74,6 @@
 	right: -95px;
 	bottom: -60px;
 }
+
+#contentContainer a:link {color:#7EAB5C;}
+#contentContainer a:visited {color: #4B6637;} 

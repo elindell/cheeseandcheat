@@ -33,13 +33,7 @@
 }
 
 #smallEK {
-	z-index:100;
-	position: absolute;
-	width: 197px;
-	height: 100px;
 	display: none;
-	background-image: url("/static/images/EKsmall.png");
-	background-repeat: no-repeat;
 }
 
 #letUsTellYouOurStory {

@@ -1,0 +1,23 @@
+#backgroundContainer {
+	background-color: white;
+	min-height: 500px;
+	width: 864px;
+	position: absolute;
+	left: 50%;
+	margin-left: -40%;
+	margin-top: 83px;
+	box-shadow: 0 0 10px 1px #328290;
+}
+
+#photoList {
+	list-style-type: none;
+}
+
+.thumb {
+	float: left;
+	padding: 5px;
+}
+
+.thumb img {
+	height: 200px;
+}

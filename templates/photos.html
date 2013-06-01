@@ -1,5 +1,18 @@
 {% extends "base.html" %}
 {% block title %}THE PHOTOS{% endblock %}
+{% block css %}
+<link href="/static/stylesheets/photos.css" rel="stylesheet" type="text/css" />
+<link href="/static/stylesheets/colorbox.css" rel="stylesheet" type="text/css" />
+{% endblock %}
 {% block content %}
-<img src="http://placekitten.com/g/600/600" width="600px" height="600px">
+<div id="backgroundContainer">
+	<ul id="photoList">
+		<li><a class="thumb" href="https://sphotos-a.xx.fbcdn.net/hphotos-frc1/482477_10152889545535151_457207669_n.jpg"><img src="https://sphotos-a.xx.fbcdn.net/hphotos-frc1/482477_10152889545535151_457207669_n.jpg" /></a></li>
+		<li><a class="thumb" href="https://sphotos-a.xx.fbcdn.net/hphotos-ash3/543839_10100246650438033_1401868119_n.jpg"><img src="https://sphotos-a.xx.fbcdn.net/hphotos-ash3/543839_10100246650438033_1401868119_n.jpg" /></a></li>
+	</ul>
+</div>
+{% endblock %}
+{% block scripts %}
+ <script src="/static/scripts/jquery.colorbox-min.js" type="text/javascript"></script>
+ <script src="/static/scripts/photos.js" type="text/javascript"></script>
 {% endblock %}
