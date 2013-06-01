@@ -9,6 +9,32 @@
 	box-shadow: 0 0 10px 1px #328290;
 }
 
+#toast {
+	display: none;
+	position: absolute;
+	top: -50px;
+	text-align: center;
+	width: 864px;
+	height: 40px;
+}
+
+#toastInner {
+	background-color: white;
+	display: inline-block;
+	font-size: 1.25em;
+	height: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	border-radius: 12px;
+}
+
+#toastInner span {
+	vertical-align: middle;
+	font-family: Georgia, Times, "Times New Roman", serif;	
+	color: #549EAA;
+}
+
 #photoList {
 	list-style-type: none;
 }
