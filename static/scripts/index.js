@@ -13,7 +13,8 @@
 		, animating
         , layers
         , index
-        , j;
+        , j
+		, storyMode = false;
 		
 		$.extend($.easing, {
 			easeOutBack: function(a,b,c,d,e,f) { 
@@ -64,6 +65,7 @@
 			$("#theaterAndCaptionContainer").animate({left: 140}, initialTransitionDuration, 'swing', function() {
 				$("#smallEK").fadeIn();
 				nextButton.fadeIn();
+				storyMode = true;
 			});
 		}
         
@@ -136,5 +138,25 @@
         nextButton.click(goToNextPanel);
         previousButton.click(goToPreviousPanel);
 		$('#letUsTellYouOurStory').click(beginStory);
+		
+		$(window).keydown(function (e) {
+		  var keyCode = e.keyCode || e.which,
+		      arrow = {left: 37, up: 38, right: 39, down: 40 };
+
+		  switch (keyCode) {
+		    case arrow.left:
+				if (storyMode) {
+					goToPreviousPanel(e);
+				}
+		    break;
+		    case arrow.right:
+				if (storyMode) {
+					goToNextPanel(e);
+				}
+		      	
+		    break;
+		  }
+		});
+		
     });
 })($);
