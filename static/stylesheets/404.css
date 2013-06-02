@@ -1,0 +1,7 @@
+#heading:before, #heading:after {
+	content: "Hmm...";
+}
+
+#heading {
+	margin-top: 15px;
+}

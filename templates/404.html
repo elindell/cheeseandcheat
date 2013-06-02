@@ -1,0 +1,10 @@
+{% extends "informationBase.html" %}
+{% block css %}
+{{ super() }}
+<link href="/static/stylesheets/404.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+{% block information %}
+<h1 id="heading" class="heading">Hmm...</h1>
+<br/>
+<p>We can't seem to find the page you're looking for. Click <a href="/">here</a> to return home.</p>
+{% endblock %}

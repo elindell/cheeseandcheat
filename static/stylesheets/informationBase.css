@@ -1,0 +1,53 @@
+#backgroundContainer {
+	background-color: white;
+	min-height: 500px;
+	width: 864px;
+	position: absolute;
+	left: 50%;
+	margin-left: -40%;
+	margin-top: 83px;
+	box-shadow: 0 0 10px 1px #328290;
+}
+
+#contentContainer {
+	margin: auto auto 20px 30px;
+	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+	color: #549EAA;
+}
+
+#ribbon {
+	position: absolute;
+	right: -4px;
+	top: -4px;
+}
+
+.heading {
+	font-family: Georgia, Times, "Times New Roman", serif;
+	color: #70A833;
+	position: relative;
+	font-size: 3em;
+	margin: 15px auto 10px auto;
+}
+
+.heading:before, .heading:after {
+    color: rgba(255,255,255,.2);
+    position: absolute;
+}
+
+.heading:before { top: 1px; left: 1px }
+.heading:after  { top: 2px; left: 2px }
+
+#flowersBack {
+	position: absolute;
+	right: -63px;
+	bottom: -39px;
+}
+
+#flowerFront {
+	position: absolute;
+	right: -95px;
+	bottom: -60px;
+}
+
+#contentContainer a:link {color:#7EAB5C;}
+#contentContainer a:visited {color: #7EAB5C;} 

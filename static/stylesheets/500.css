@@ -1,0 +1,11 @@
+#heading:before, #heading:after {
+	content: "Oops!";
+}
+
+#heading {
+	margin-top: 15px;
+}
+
+#text {
+	width: 804px;
+}

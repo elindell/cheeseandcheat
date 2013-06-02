@@ -1,0 +1,10 @@
+{% extends "informationBase.html" %}
+{% block css %}
+{{ super() }}
+<link href="/static/stylesheets/500.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+{% block information %}
+<h1 id="heading" class="heading">Oops!</h1>
+<br/>
+<p id="text">It seems something went wrong on our end. Click <a href="/">here</a> to go home. If you keep seeing this page, please let Kayla or Evan know.</p>
+{% endblock %}
