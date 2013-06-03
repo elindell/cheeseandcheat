@@ -1,5 +1,9 @@
 (function($) {
 	
+	// Hi source browser. If you like this, you should check out http://hobolobo.net/, because I stole the idea from there.
+	// I also stole the art from my friend and the story from my fiancee.
+	// I am not a proud man.
+	
     $("document").ready(function() {
         var currentPanelIndex = 0
         , numberOfPanels = 11
@@ -40,7 +44,7 @@
 			, "<p>But she was jealous of his time in the mountains,</p><p>and in a place in which beer practically flowed from the fountains.</p><p>So this time Evan was the one life tried to dishearten,</p><p>as the girl of his dreams sat in a biergarten.</p>"
 			, "<p>They were reunited and spent a summer in bliss.</p><p>It was these times they soon would miss.</p><p>He left for a job, and the distance tugged on his heartstrings</p><p>Enough was enough! He began his search for her ring.</p>"
 			, "<p>So at the next holiday, Thanksgiving in fact,</p><p>confidence (as well as the ring) Evan had packed.</p><p>With her parents' blessing and ring in hand, his love for her he began to express.</p><p>While looking at the man of her dreams down on one knee, she said, \"Yes!\"</p>"
-			, "<p>Now you know the story of Kayla and Evan,</p><p>the history of what some would call a match made in heaven.</p><p>The day of wedding bells they are now eagerly awaiting,</p><p>so please, come join them in celebrating!</p>"
+			, "<p>Now you know the story of Kayla and Evan,</p><p>the history of what some would call a match made in heaven.</p><p>The day of wedding bells they are now eagerly awaiting,</p><p>so please, come join them in celebrating!</p><p style=\"font-size:.78em\">(Also, join them in thanking the amazing Allison Schedin for making all the art for this site out of the goodness of her heart. You're awesome, Allison)</p>"
 		];
 		
 		captionP.html(captions[0]);
