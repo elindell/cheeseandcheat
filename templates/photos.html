@@ -11,57 +11,56 @@
 		</span>
 	</div>
 	<ul id="photoList">
-		{% for href in ['http://sphotos-a.xx.fbcdn.net/hphotos-ash3/17131_393604660150_5567918_n.jpg'
-						,'http://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-ash4/2727_65641833148_6480293_n.jpg'
-						,'http://sphotos-a.xx.fbcdn.net/hphotos-prn1/15945_333908650564_1861175_n.jpg'
-						,'http://sphotos-b.xx.fbcdn.net/hphotos-prn1/18145_411726780564_8230740_n.jpg'
-						,'http://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-prn1/23937_10150107634510565_1276751_n.jpg'
-						,'http://sphotos-b.xx.fbcdn.net/hphotos-prn1/23768_10150128140250565_3887785_n.jpg'
-						,'http://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-prn1/24719_10150172791000565_1696397_n.jpg'
-						,'http://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-ash3/24779_10150165911070565_4529675_n.jpg'
-						,'http://sphotos-b.xx.fbcdn.net/hphotos-ash3/164776_10150357898670151_4372286_n.jpg'
-						,'http://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-ash3/166345_10150357899200151_2009221_n.jpg'
-						,'http://sphotos-a.xx.fbcdn.net/hphotos-ash3/38022_10150224189610413_7595899_n.jpg'
-						,'http://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-prn1/37503_10150224190225413_5075560_n.jpg'
-						,'http://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-prn1/34359_10150218934110151_4096959_n.jpg'
-						,'http://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-prn1/34386_10150218934125151_7394622_n.jpg'
-						,'http://sphotos-b.xx.fbcdn.net/hphotos-ash3/35118_10150224262170413_4041287_n.jpg'
-						,'http://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-prn1/37899_10150224260065413_5617834_n.jpg'
-						,'http://sphotos-a.xx.fbcdn.net/hphotos-snc6/167344_10150357903165151_5242793_n.jpg'
-						,'http://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-prn1/37698_10150236253635565_803819_n.jpg'
-						,'http://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-ash3/37749_10150236254665565_3466368_n.jpg'
-						,'http://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-ash3/36242_10150357902280151_5218491_n.jpg'
-						,'http://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-snc6/165648_10150357919825151_313499_n.jpg'
-						,'http://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-ash3/167684_10150381461670565_4859903_n.jpg'
-						,'http://sphotos-b.xx.fbcdn.net/hphotos-prn2/181917_10150094687943149_4720190_n.jpg'
-						,'http://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-ash3/181721_10150094688158149_3362489_n.jpg'
-						,'http://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-ash4/224360_10150166974941428_2264908_n.jpg'
-						,'http://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-ash4/264070_10150709437430565_31935_n.jpg'
-						,'http://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-prn2/261915_10150709438665565_5630928_n.jpg'
-						,'http://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-ash3/253363_10150259462903149_8314339_n.jpg'
-						,'http://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-ash4/185511_10150758170485565_1309497_n.jpg'
-						,'http://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-ash4/229762_10150758168685565_6164454_n.jpg'
-						,'http://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-prn1/311934_10150779696855565_7846783_n.jpg'
-						,'http://sphotos-a.xx.fbcdn.net/hphotos-frc1/316392_10150794077900565_4632463_n.jpg'
-						,'http://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-ash4/320920_10150794076060565_545885_n.jpg'
-						,'http://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-frc1/307535_10150794087320565_5410187_n.jpg'
-						,'http://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-ash4/378002_10150950369070565_284843938_n.jpg'
-						,'http://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-prn1/407757_10151115967750565_698362333_n.jpg'
-						,'http://sphotos-a.xx.fbcdn.net/hphotos-frc1/376976_10151123402875565_263897151_n.jpg'
-						,'http://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-ash3/522150_994843818543_155180828_n.jpg'
-						,'http://sphotos-a.xx.fbcdn.net/hphotos-ash4/483309_10151915516645565_1292367789_n.jpg'
-						,'http://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-ash3/395831_10152042932230565_2051365649_n.jpg'
-						,'http://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-prn1/390435_10152154295075565_2142957912_n.jpg'
-						,'http://sphotos-b.xx.fbcdn.net/hphotos-prn1/65352_10152319878670565_26532467_n.jpg'
-						,'http://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-frc1/283298_10152319879925565_1767589348_n.jpg'
-						,'http://sphotos-a.xx.fbcdn.net/hphotos-frc1/16027_10152319881335565_438942165_n.jpg'
-						,'http://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-ash3/27997_10152319883195565_1980996394_n.jpg'
-						,'http://sphotos-b.xx.fbcdn.net/hphotos-ash3/r270/541705_10152399568660565_1309776529_n.jpg'
-						,'http://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-ash3/601545_10152720935545565_948085058_n.jpg'
-						,'http://sphotos-b.xx.fbcdn.net/hphotos-prn1/942829_10100336103014353_1205527008_n.jpg'
-						,'http://sphotos-a.xx.fbcdn.net/hphotos-prn1/942108_10152906495425565_798898868_n.jpg'
-						,'http://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-ash3/945484_10152906039045565_1230027789_n.jpg'
-						] %}
+		{% for href in ['/static/images/engagement/BDP_5653.jpg',
+'/static/images/engagement/BDP_5661.jpg',
+'/static/images/engagement/BDP_5665.jpg',
+'/static/images/engagement/BDP_5669.jpg',
+'/static/images/engagement/BDP_5681.jpg',
+'/static/images/engagement/BDP_5684.jpg',
+'/static/images/engagement/BDP_5691.jpg',
+'/static/images/engagement/BDP_5696.jpg',
+'/static/images/engagement/BDP_5698.jpg',
+'/static/images/engagement/BDP_5721.jpg',
+'/static/images/engagement/BDP_5740.jpg',
+'/static/images/engagement/BDP_5745.jpg',
+'/static/images/engagement/BDP_5746.jpg',
+'/static/images/engagement/BDP_5760.jpg',
+'/static/images/engagement/BDP_5783.jpg',
+'/static/images/engagement/BDP_5784.jpg',
+'/static/images/engagement/BDP_5787a.jpg',
+'/static/images/engagement/BDP_5825.jpg',
+'/static/images/engagement/BDP_5833.jpg',
+'/static/images/engagement/BDP_5841.jpg',
+'/static/images/engagement/BDP_5852.jpg',
+'/static/images/engagement/BDP_5857.jpg',
+'/static/images/engagement/BDP_5859.jpg',
+'/static/images/engagement/BDP_5868.jpg',
+'/static/images/engagement/BDP_5875.jpg',
+'/static/images/engagement/BDP_5889.jpg',
+'/static/images/engagement/BDP_5900.jpg',
+'/static/images/engagement/BDP_5909.jpg',
+'/static/images/engagement/BDP_5922.jpg',
+'/static/images/engagement/BDP_5939.jpg',
+'/static/images/engagement/BDP_5940.jpg',
+'/static/images/engagement/BDP_5941.jpg',
+'/static/images/engagement/BDP_5942.jpg',
+'/static/images/engagement/BDP_5943.jpg',
+'/static/images/engagement/BDP_5944.jpg',
+'/static/images/engagement/BDP_5945.jpg',
+'/static/images/engagement/BDP_5946.jpg',
+'/static/images/engagement/BDP_5947.jpg',
+'/static/images/engagement/BDP_5948.jpg',
+'/static/images/engagement/BDP_5949.jpg',
+'/static/images/engagement/BDP_5950.jpg',
+'/static/images/engagement/BDP_5956.jpg',
+'/static/images/engagement/BDP_5973.jpg',
+'/static/images/engagement/BDP_5976.jpg',
+'/static/images/engagement/BDP_5996.jpg',
+'/static/images/engagement/BDP_6006.jpg',
+'/static/images/engagement/BDP_6010.jpg',
+'/static/images/engagement/BDP_6012.jpg',
+'/static/images/engagement/BDP_6016.jpg',
+'/static/images/engagement/k6002.jpg'] %}
 		<li><a class="thumb" href="{{ href }}"><img src="{{ href }}" /></a></li>
 	{% endfor %}
 	</ul>
